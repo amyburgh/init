@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# add to file /etc/crontab OR use crontab -e command: 
+# 0 0 * * * root /path/to/this/file
+
+ORIGINAL=/etc/crontab
+BACKUP=/etc/.crontab_backup
+
+if [ ! -e $BACKUP ]
+then
+	sudo cp $ORIGINAL $BACKUP
+	exit 0
+fi
+
+VAR1="$(md5sum $ORIGINAL | awk '{ print $1 }')"
+VAR2="$(md5sum $BACKUP | awk '{ print $1 }')"
+	
+if [ "$VAR1" != "$VAR2" ]
+then
+	echo "Crontab has been modified since last backup" | mail -s "Report Crontab Modified!" root
+	exit 1
+fi
+
+sudo cp $ORIGINAL $BACKUP"
+
+# Simple solution to check if a file was changed since the last backup was made.

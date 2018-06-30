@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo "\033[1;33m2. Identify and display the Ethernet interface characteristics.\033[0m"
+	echo "networksetup -getinfo ethernet"
+read -p ""
+	networksetup -getinfo ethernet
+read -p '' ; ./03
+# en0.. refer to the physical network interfaces.
+# lo0 is the 'loopback' interface. Otherwise known as localhost, or 127.0.0.1
+# The others are virtual interfaces.

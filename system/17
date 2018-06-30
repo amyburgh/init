@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "\033[1;33m17. Find the command which gives the list of firewall rules.\033[0m"
+	echo "sudo iptables -L"
+read -p "" ; ./18

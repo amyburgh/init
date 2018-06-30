@@ -1,0 +1,11 @@
+#!/bin/sh
+
+echo "\033[1;33m15. What file contains the local DNS entries:\033[0m"
+	echo "ls /etc/hosts"
+read -p ""
+	ls /etc/hosts
+	echo "\033[1;33mContents:\033[0m"
+	less /etc/hosts
+read -p "" ; ./16
+
+# Local DNS entries are contained in /etc/hosts.

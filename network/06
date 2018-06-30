@@ -1,0 +1,9 @@
+#!/bin/sh
+
+echo "\033[1;33m6. Get the complete path of the file that contains the IP address of the DNS server you’re using.\033[0m"
+	echo "/etc/resolv.conf"
+read -p ""
+	less /etc/resolv.conf
+echo "\033[1;33mNote:\033[0m \"ls -l /etc/resolv.conf\" will produce the following symbolic link:"
+	ls -l /etc/resolv.conf
+read -p "" ; ./07

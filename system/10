@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "\033[1;33m10. Name the command that lists the partition tables of external devices?\033[0m"
+	echo "sudo fdisk -l"
+read -p "" ; ./11

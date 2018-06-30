@@ -1,0 +1,11 @@
+#!/bin/sh
+
+IPADDR="$(ifconfig en0 | awk '/inet / {print $2 }')"
+PCNAME="$(hostname | sed "s/.42.us.org/""/")"
+
+echo "\033[1;33m10. Identify the network devices between computer \033[1;31m$PCNAME\033[1;33m \
+with IP of \033[1;31m$IPADDR\033[1;33m and slash16.org:\n\033[0m"
+	echo "traceroute slash16.org"
+#read -p ""
+#	traceroute slash16.org
+read -p "" ; ./11

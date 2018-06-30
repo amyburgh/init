@@ -1,0 +1,21 @@
+#!/bin/sh
+
+echo "\033[1;33m13. Figure out the server type\033[0m"
+echo "The server is of DHCP type."
+echo "if ipconfig getpacket en0 | grep dhcp > /dev/null
+then
+	echo \"\033[1;32m[PASSED]\033[0m\"
+else
+	echo \"\033[1;31m[FAILED]\033[0m\"
+fi"
+read -p ""
+echo "Check: \c"
+if ipconfig getpacket en0 | grep dhcp > /dev/null
+then
+	echo "\033[1;32m[PASSED]\033[0m"
+else
+	echo "\033[1;31m[FAILED]\033[0m"
+fi
+echo "\n\033[1;33mDeduction: \033[0mDHCP (Dynamic Host Configuration Protocol) is a protocol used to provide\
+\nquick, automatic, and central management for the distribution of IP addresses within a network."
+read -p "" ; ./14

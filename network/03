@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo "\033[1;33m3. Identify the MAC address of the Wi-Fi card.\033[0m"
+	echo "networksetup -getmacaddress en1 | cut -d \" \" -f3"
+read -p ""
+	networksetup -getmacaddress en1 | cut -d " " -f3
+read -p "" ; ./04

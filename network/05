@@ -1,0 +1,9 @@
+#!/bin/sh
+
+echo "\033[1;33m5. Identify the IP address of the DNS that responds to the following url: slash16.org\033[0m"
+	echo "nslookup slash16.org | grep \"Server:\" | awk '{ print \$2 }'"
+read -p ""
+	nslookup slash16.org | grep "Server:" | awk '{ print $2 }'
+read -p "" ; ./06
+
+# The Domain Name System (aka DNS) is used to resolve human-readable hostnames like www.***.com into machine-readable IP addresses like 42.42.4242.42

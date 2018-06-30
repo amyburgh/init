@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "\033[1;33m9. What command lets you know who is connected to the System?\033[0m"
+	echo "who"
+read -p "" ; ./10

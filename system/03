@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo "\033[1;33m3. What file has to be modified to make it permanent?\033[0m"
+	echo "etc/hostname"
+	echo "\033[1;33mCommand:\033[0m sudo echo \"new_name\">etc/hostname"
+echo "\n\033[1;33mDeduction:\033[0m The command above will replace the hostname with \"new_name\" if the user has admin privileges."
+read -p "" ; ./04

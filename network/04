@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo "\033[1;33m4. Identify the default gateway in the routing table.\033[0m"
+	echo "netstat -rn | grep default | head -n 1 | awk '{ print \$2 }'"
+read -p ""
+	netstat -rn | grep default | head -n 1 | awk '{ print $2 }'
+read -p "" ; ./05
+# A gateway is a network point that acts as an entrance to another network.

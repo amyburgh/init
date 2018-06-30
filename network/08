@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo "\033[1;33m8. Find the provider of slash16.org\033[0m"
+	echo "PROVIDER=\"\$(host -ta slash16.org | head -n 1 | awk '{ print \$4 }')\""
+	echo "whois \$PROVIDER | grep OrgName: | head -n 1 | awk '{ print \$2 }' | tr -d \",\""
+read -p ""
+	PROVIDER="$(host -ta slash16.org | head -n 1 | awk '{ print $4 }')"
+	whois $PROVIDER | grep OrgName: | head -n 1 | awk '{ print $2 }' | tr -d ","
+echo "\n\033[1;33mDeduction:\033[0m First get the IP of slash.org and then use the \"whois\" command to find the service provider."
+read -p "" ; ./09

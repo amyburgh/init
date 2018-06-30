@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "\033[1;33m8. What file contains the RSA keys that are authorized to connect via SSH?\033[0m"
+	echo "/etc/.ssh/authorized_keys"
+echo "\n\033[1;33mDeduction:\033[0m The RSA keys are stored in the hidden folder \".ssh\" in the \"authorized_keys\" file."
+read -p "" ; ./09

@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "\033[1;33m18. With the previous command, authorize only IP addresses from 10.0.0.0/8 to connect to your system\033[0m"
+	echo "sudo iptables -P INPUT DROP"	
+	echo "sudo iptables -A INPUT -p tcp -s 10.0.0.0/8 -j ACCEPT"
+read -p "" ; ./19

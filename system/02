@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo "\033[1;33m2. What command can you use to rename your system?\033[0m"
+	echo "sudo hostname [new_hostname]"
+read -p "" ; ./03
+# To change hostname, user must be running as root or have root privileges.
+# Root does not need to use the sudo command.

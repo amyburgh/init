@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "* 4 * * 1 root apt-get update && apt-get upgrade |\
+ crontab > /dev/null 2>&1" >> /etc/crontab"

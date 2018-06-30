@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "\033[1;33m13. Name the command that find currently running processes.\033[0m"
+	echo "ps -aux | less"
+read -p "" ; ./14

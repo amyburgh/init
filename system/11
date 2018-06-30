@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "\033[1;33m11. Name the command that displays the available space left on the system?\033[0m"
+	echo "df -h /home"
+read -p "" ; ./12

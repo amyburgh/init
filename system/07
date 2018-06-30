@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "\033[1;33m7. Figure out the PID of the SSHD service.\033[0m"
+	echo "cat /var/run/sshd.pid \nOR\npgrep -f \"sshd\""
+read -p "" ; ./08

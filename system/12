@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "\033[1;33m12. Figure out the exact size of each folder of /var.\033[0m"
+	echo "sudo du -sh /var/*"
+read -p "" ; ./13

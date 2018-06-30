@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "\033[1;33m19. With the previous command, forbid all others.\033[0m"
+	echo "sudo iptables -A INPUT -j REJECT"

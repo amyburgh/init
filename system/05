@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "\033[1;33m5. Name the command that determines the state of the SSH service.\033[0m"
+	echo "sudo service ssh status"
+read -p "" ; ./06
